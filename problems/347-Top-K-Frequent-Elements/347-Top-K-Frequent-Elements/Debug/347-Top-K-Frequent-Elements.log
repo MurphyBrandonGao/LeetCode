@@ -1,0 +1,37 @@
+﻿生成启动时间为 2019/1/31 11:55:47。
+     1>项目“c:\Users\dell\documents\visual studio 2013\Projects\347-Top-K-Frequent-Elements\347-Top-K-Frequent-Elements\347-Top-K-Frequent-Elements.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>c:\users\dell\documents\visual studio 2013\projects\347-top-k-frequent-elements\347-top-k-frequent-elements\main.cpp(16): warning C4018: “<”: 有符号/无符号不匹配
+     1>c:\users\dell\documents\visual studio 2013\projects\347-top-k-frequent-elements\347-top-k-frequent-elements\main.cpp(19): warning C4018: “<=”: 有符号/无符号不匹配
+     1>c:\users\dell\documents\visual studio 2013\projects\347-top-k-frequent-elements\347-top-k-frequent-elements\main.cpp(23): error C2065: “greater”: 未声明的标识符
+     1>c:\users\dell\documents\visual studio 2013\projects\347-top-k-frequent-elements\347-top-k-frequent-elements\main.cpp(23): error C2275: “std::pair<int,int>”: 将此类型用作表达式非法
+     1>c:\users\dell\documents\visual studio 2013\projects\347-top-k-frequent-elements\347-top-k-frequent-elements\main.cpp(23): error C2974: 'std::priority_queue' : 模板 对于 '_Pr'是无效参数，应为类型
+                 c:\program files (x86)\microsoft visual studio 12.0\vc\include\queue(238) : 参见“std::priority_queue”的声明
+     1>c:\users\dell\documents\visual studio 2013\projects\347-top-k-frequent-elements\347-top-k-frequent-elements\main.cpp(23): error C2143: 语法错误 : 缺少“;”(在“>”的前面)
+     1>c:\users\dell\documents\visual studio 2013\projects\347-top-k-frequent-elements\347-top-k-frequent-elements\main.cpp(26): error C2065: “pq”: 未声明的标识符
+     1>c:\users\dell\documents\visual studio 2013\projects\347-top-k-frequent-elements\347-top-k-frequent-elements\main.cpp(26): error C2228: “.size”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>c:\users\dell\documents\visual studio 2013\projects\347-top-k-frequent-elements\347-top-k-frequent-elements\main.cpp(28): error C2065: “pq”: 未声明的标识符
+     1>c:\users\dell\documents\visual studio 2013\projects\347-top-k-frequent-elements\347-top-k-frequent-elements\main.cpp(28): error C2228: “.top”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>c:\users\dell\documents\visual studio 2013\projects\347-top-k-frequent-elements\347-top-k-frequent-elements\main.cpp(28): error C2228: “.first”的左边必须有类/结构/联合
+     1>c:\users\dell\documents\visual studio 2013\projects\347-top-k-frequent-elements\347-top-k-frequent-elements\main.cpp(30): error C2065: “pq”: 未声明的标识符
+     1>c:\users\dell\documents\visual studio 2013\projects\347-top-k-frequent-elements\347-top-k-frequent-elements\main.cpp(30): error C2228: “.pop”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>c:\users\dell\documents\visual studio 2013\projects\347-top-k-frequent-elements\347-top-k-frequent-elements\main.cpp(31): error C2065: “pq”: 未声明的标识符
+     1>c:\users\dell\documents\visual studio 2013\projects\347-top-k-frequent-elements\347-top-k-frequent-elements\main.cpp(31): error C2228: “.push”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>c:\users\dell\documents\visual studio 2013\projects\347-top-k-frequent-elements\347-top-k-frequent-elements\main.cpp(35): error C2065: “pq”: 未声明的标识符
+     1>c:\users\dell\documents\visual studio 2013\projects\347-top-k-frequent-elements\347-top-k-frequent-elements\main.cpp(35): error C2228: “.push”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>c:\users\dell\documents\visual studio 2013\projects\347-top-k-frequent-elements\347-top-k-frequent-elements\main.cpp(39): error C2065: “pq”: 未声明的标识符
+     1>c:\users\dell\documents\visual studio 2013\projects\347-top-k-frequent-elements\347-top-k-frequent-elements\main.cpp(39): error C2228: “.empty”的左边必须有类/结构/联合
+                 类型是“unknown-type”
+     1>c:\users\dell\documents\visual studio 2013\projects\347-top-k-frequent-elements\347-top-k-frequent-elements\main.cpp(39): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+     1>已完成生成项目“c:\Users\dell\documents\visual studio 2013\Projects\347-Top-K-Frequent-Elements\347-Top-K-Frequent-Elements\347-Top-K-Frequent-Elements.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:07.02
