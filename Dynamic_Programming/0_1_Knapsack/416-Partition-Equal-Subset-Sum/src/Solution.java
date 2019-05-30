@@ -2,6 +2,7 @@
  * @author Dell
  * @create 2019-05-29 16:45
  */
+//可以看成一个背包大小为 sum/2 的 0-1 背包问题。
 public class Solution {
     public boolean canPartition(int[] nums) {
         int sum = computeArraySum(nums);
