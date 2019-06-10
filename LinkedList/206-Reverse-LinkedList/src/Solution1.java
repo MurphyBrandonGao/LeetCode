@@ -12,6 +12,6 @@ public class Solution1 {
             newList.next = head;
             head = next;
         }
-        return newList;
+        return newList.next;
     }
 }
