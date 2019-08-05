@@ -24,7 +24,7 @@ public class Solution {
         // 在n个数下，形成的两辆相邻，形成的两两区间是n-1个，比如【2,4,6,8】这里
         // 有4个数，但是只有3个区间，
         // 因此，桶长度=区间总长度/区间总个数 =（max-min) / (nums.length - 1)
-        int bucketSize = Math.max(1, (max - min) / nums.length - 1);
+        int bucketSize = Math.max(1, (max - min) / (nums.length - 1));
 
         // 桶个数=区间长度/桶长度 + 1
         // 已知一个元素，需要定位到桶的时候，一般是（当前元素-最小值）/ 桶长度
@@ -37,6 +37,7 @@ public class Solution {
             buckets[loc].min = Math.min(buckets[loc].min, nums[i]);
             buckets[loc].max = Math.max(buckets[loc].max, nums[i]);
         }
+
         int previousMax = Integer.MAX_VALUE;
         int maxGap = Integer.MIN_VALUE;
         for (int i = 0; i < buckets.length; i++) {
