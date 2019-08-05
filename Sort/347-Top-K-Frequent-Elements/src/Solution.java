@@ -25,5 +25,17 @@ public class Solution {
             buckets[frequcency].add(key);
         }
 
+        List<Integer> topk = new ArrayList<>();
+        for (int i = buckets.length - 1; i >= 0 && topk.size() < k; i--) {
+            if (buckets[i] == null)
+                continue;
+
+            if (buckets[i].size() <= k - topk.size())
+                topk.addAll(buckets[i]);
+            else
+                topk.addAll(buckets[i].subList(0, k - topk.size()));
+        }
+        return topk;
     }
+
 }
