@@ -4,34 +4,33 @@ import java.util.Arrays;
  * @author Dell
  * @create 2019-05-28 18:25
  */
-//递归+记忆化搜索：时间复杂度为O（n^2)
-public class Solution2 {
-    private int[] memo;
-
+// 二分查找，时间复杂度为O(nlogn)
+public class Solution3 {
     public int lengthOfLIS(int[] nums) {
-        if (nums == null || nums.length == 0)
-            return 0;
-
-        memo = new int[nums.length];
-        Arrays.fill(memo, -1);
-        int res = 1;
-        for (int i = 0; i < nums.length; i++) {
-            res = Math.max(res, getMaxLength(nums, i));
+        int n = nums.length;
+        int[] tails = new int[n];
+        int len = 0;
+        for (int num : nums) {
+            int index = binarySearch(tails, len, num);
+            tails[index] = num;
+            if (index == len)
+                len++;
         }
-        return res;
+        return len;
     }
 
-    //以nums[index]为结尾的最长上升子序列的长度
-    private int getMaxLength(int[] nums, int index) {
-        if (memo[index] != -1)
-            return memo[index];
-
-        int res = 1;
-        for (int i = 0; i < index; i++) {
-            if (nums[index] > nums[i])
-                res = Math.max(res, getMaxLength(nums, i) + 1);
+    private int binarySearch(int[] tails, int len, int key) {
+        int l = 0;
+        int h = len;
+        while (l < h) {
+            int mid = l + (h - l) / 2;
+            if (tails[mid] == key)
+                return mid;
+            else if (tails[mid] > key)
+                h = mid;
+            else
+                l = mid + 1;
         }
-        memo[index] = res;
-        return memo[index];
+        return l;
     }
 }
